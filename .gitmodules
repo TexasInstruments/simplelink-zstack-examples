@@ -1,3 +1,4 @@
 [submodule "cc13xx_cc26xx_sdk"]
 	path = cc13xx_cc26xx_sdk
 	url = https://github.com/TexasInstruments/cc13xx_cc26xx_sdk.git
+	branch = main

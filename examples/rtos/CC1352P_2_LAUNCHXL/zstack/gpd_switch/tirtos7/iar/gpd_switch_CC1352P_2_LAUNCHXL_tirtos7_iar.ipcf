@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IAR Project Connection File -->
+
+<iarProjectConnection version="1.2" name="Green Power Device Switch" oneShot="true"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="IarProjectConnection_1.2.xsd">
+
+    <device>
+        <name>CC1352P1F3</name>
+    </device>
+
+    <asmIncludePath>
+        <path>$PROJ_DIR$</path>
+    </asmIncludePath>
+
+    <includePath>
+        <path>$PROJ_DIR$</path>
+        <path>$PROJ_DIR$/Application/StartUp</path>
+        <path>$PROJ_DIR$/Application/Services</path>
+        <path>$PROJ_DIR$/Application/util</path>
+        <path>$PROJ_DIR$/Common/gpd</path>
+        <path>$PROJ_DIR$/Application</path>
+        <path>$PROJ_DIR$/Stack/Config</path>
+        <path>$PROJ_DIR$/Stack/osal_port</path>
+        <path>$PROJ_DIR$/Stack/HAL/Crypto</path>
+        <path>$PROJ_DIR$/Stack/HAL/Platform</path>
+        <path>$PROJ_DIR$/Stack/HAL/RF</path>
+        <path>$PROJ_DIR$/Stack/MAC/HighLevel</path>
+        <path>$PROJ_DIR$/Stack/MAC/LowLevel</path>
+        <path>$PROJ_DIR$/Stack/MAC</path>
+        <path>$PROJ_DIR$/Stack/ROM</path>
+        <path>$PROJ_DIR$/Stack/sys</path>
+        <path>$PROJ_DIR$/Stack/sec</path>
+        <path>$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/ti154stack/services/saddr</path>
+        <path>$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/ti154stack/services/sdata</path>
+        <path>$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/ti154stack/hal/crypto</path>
+        <path>$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/ti154stack/hal/platform</path>
+        <path>$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/ti154stack/hal/rf</path>
+        <path>$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/zstack/stack/nwk</path>
+        <path>$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/zstack/zmac</path>
+        <path>$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/zstack/zmac/f8w</path>
+        <path>$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/zstack/stack/api</path>
+        <path>$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/zstack/stack/af</path>
+        <path>$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/zstack/stack/sec</path>
+        <path>$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/zstack/stack/sys</path>
+        <path>$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/zstack/stack/zdo</path>
+        <path>$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/zstack/gpd</path>
+        <path>$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/zstack/osal</path>
+        <path>$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/common/cui</path>
+        <path>$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/ti154stack</path>
+        <path>$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/ti154stack/fh</path>
+        <path>$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/ti154stack/high_level</path>
+        <path>$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/ti154stack/inc</path>
+        <path>$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/ti154stack/inc/cc13xx</path>
+        <path>$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/ti154stack/low_level/cc13xx</path>
+        <path>$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/ti154stack/tracer  </path>
+        <path>$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/ti154stack/rom</path>
+        <path>$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/ti154stack/common/heapmgr</path>
+        <path>$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/ti154stack/common/osal_port</path>
+        <path>$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/ti154stack/common/osal_port/osal_port_posix</path>
+        <path>$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/common/nv</path>
+        <path>$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/zstack/util</path>
+        <path>$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/ti154stack/common/util</path>
+        <path>$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/zstack/config</path>
+        <path>$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/zstack/startup</path>
+        <path>$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/ti154stack/common/api/inc</path>
+        <path>$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/common/time</path>
+        <path>$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/ti154stack/common/boards</path>
+        <path>$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source</path>
+        <path>$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/devices/cc13x2_cc26x2</path>
+        <path>$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/devices/cc13x2_cc26x2/inc</path>
+        <path>$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/devices/cc13x2_cc26x2/driverlib</path>
+        <path>$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/posix/iar</path>
+    </includePath>
+
+    <defines>
+        <define>xBATTERYLESS_DEVICE</define>
+        <define>TIMAC_ROM_PATCH</define>
+        <define>xCUI_DISABLE</define>
+        <define>ZSTACK_SECURITY</define>
+        <define>OSAL_PORT2TIRTOS</define>
+        <define>OSAL_PORT2TIRTOS_OSALMAP</define>
+        <define>MAX_DEVICE_TABLE_ENTRIES=1</define>
+        <define>ZSTACK_GPD</define>
+        <define>FREQ_2_4G</define>
+        <define>NV_RESTORE</define>
+        <define>NV_INIT</define>
+        <define>FEATURE_NON_BEACON_MODE</define>
+        <define>DEVICE_FAMILY=cc13x0</define>
+        <define>DeviceFamily_CC13X2</define>
+        <define>NO_CC1312R1_SUPPORT</define>
+        <define>TIMAC_ROM_IMAGE_BUILD</define>
+        <define>NVOCMP_NVPAGES=2</define>
+        <define>CONFIG_PA_TYPE=APIMAC_HIGH_PA</define>
+        <define>CC1352P_2</define>
+    </defines>
+
+    <extraOptions>
+        <args>
+            <arg>--debug</arg>
+            <arg>--silent</arg>
+            <arg>-e</arg>
+            <arg>--aeabi</arg>
+            <arg>--thumb</arg>
+            <arg>--diag_suppress=Pa050</arg>
+            <arg> -I${COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR}/source/ti/zstack/apps/gpd_switch</arg>
+            <arg> -DTIRTOS7_SUPPORT</arg>
+            <arg> -DHEAPMGR_CONFIG=0x80</arg>
+            <arg> -DHEAPMGR_SIZE=0x00</arg>
+            <arg> -I$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/kernel/tirtos7/packages</arg>
+            <arg> -I$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/posix/iar</arg>
+        </args>
+    </extraOptions>
+
+    <linkerFile>
+        <override>true</override>
+        <path>$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/zstack/boards/cc13x2_cc26x2/cc13x2_cc26x2.icf</path>
+    </linkerFile>
+
+    <linkerExtraOptions>
+        <args>
+            <arg>--silent</arg>
+            <arg>--redirect</arg>
+            <arg>_Printf=_PrintfSmall</arg>
+            <arg>--config_def=NVOCMP_NVPAGES=2</arg>
+            <arg> -f$PROJ_DIR$/ti_utils_build_linker.cmd.genlibs</arg>
+            <arg> -L$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source</arg>
+            <arg>-f$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/ti154stack/lib/rom/iar/timac_rom_PG2_0_rom_api_linker.icf</arg>
+            <arg>-L$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/kernel/tirtos7/packages</arg>
+            <arg>-f$PROJ_DIR$/ti_utils_build_linker.cmd.genlibs</arg>
+            <arg> $COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/devices/cc13x2_cc26x2/driverlib/bin/iar/driverlib.lib</arg>
+        </args>
+    </linkerExtraOptions>
+
+    <customBuildTools>
+        <customBuildTool atRoot="true" name="SysConfig"> <!-- Custom build tool for entire project-->
+            <fileExtensions>.syscfg</fileExtensions>
+            <command>$SYSCONFIG_ROOT$/sysconfig_cli.bat -o $PROJ_DIR$ -s "$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/.metadata/product.json" --compiler iar $FILE_PATH$</command>
+            <output>
+                <path>SysConfig_Generated_Files.ipcf</path>
+            </output>
+            <hasPrio>true</hasPrio> <!-- true: run this tool before all other tools-->
+        </customBuildTool>
+    </customBuildTools>
+
+    <heaps>
+        <heap> <!-- If omitted, id="0" -->
+            <size>0</size>
+        </heap>
+        <heap id="1">
+            <size>0</size>
+        </heap>
+    </heaps>
+    <stacks>
+        <stack> <!-- If omitted, id="0" -->
+            <size>512</size>
+        </stack>
+    </stacks>
+
+
+    <postBuild>
+        <command>ielftool --ihex --verbose "$TARGET_BPATH$.out" "$TARGET_BPATH$.hex" </command>
+    </postBuild>
+
+    <files>
+        <path reference="$PROJ_DIR$/Board.html">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/boards/CC1352P_2_LAUNCHXL/Board.html</path>
+        <path reference="$PROJ_DIR$/cc13x2_cc26x2.icf">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/zstack/boards/cc13x2_cc26x2/cc13x2_cc26x2.icf</path>
+        <path copyTo="$PROJ_DIR$/gpd_switch.syscfg">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/examples/rtos/CC1352P_2_LAUNCHXL/zstack/gpd_switch/tirtos7/gpd_switch.syscfg</path>
+        <group name="Application" build="true">
+            <path reference="$PROJ_DIR$/Application/api_mac.c">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/ti154stack/common/osal_port/osal_port_posix/api_mac.c</path>
+            <path reference="$PROJ_DIR$/Application/api_mac.h">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/ti154stack/common/osal_port/api_mac.h</path>
+            <path reference="$PROJ_DIR$/Application/gpd_sw.c">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/zstack/apps/gpd_switch/gpd_sw.c</path>
+            <path reference="$PROJ_DIR$/Application/gpd_sw.h">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/zstack/apps/gpd_switch/gpd_sw.h</path>
+            <path reference="$PROJ_DIR$/Application/gpd_sw_data.c">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/zstack/apps/gpd_switch/gpd_sw_data.c</path>
+            <path reference="$PROJ_DIR$/Application/macTask.c">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/ti154stack/common/osal_port/osal_port_posix/macTask.c</path>
+            <path reference="$PROJ_DIR$/Application/macTask.h">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/ti154stack/common/osal_port/macTask.h</path>
+        </group>
+        <group name="Application/Services" build="true">
+            <path reference="$PROJ_DIR$/Application/Services/crc.c">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/common/nv/crc.c</path>
+            <path reference="$PROJ_DIR$/Application/Services/nvintf.h">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/common/nv/nvintf.h</path>
+            <path reference="$PROJ_DIR$/Application/Services/nvocmp.c">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/common/nv/nvocmp.c</path>
+            <path reference="$PROJ_DIR$/Application/Services/nvocmp.h">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/common/nv/nvocmp.h</path>
+            <path reference="$PROJ_DIR$/Application/Services/saddr.c">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/ti154stack/services/saddr/saddr.c</path>
+            <path reference="$PROJ_DIR$/Application/Services/saddr.h">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/ti154stack/services/saddr/saddr.h</path>
+            <path reference="$PROJ_DIR$/Application/Services/sdata.h">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/ti154stack/services/sdata/sdata.h</path>
+        </group>
+        <group name="Application/StartUp" build="true">
+            <path reference="$PROJ_DIR$/Application/StartUp/main.c">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/zstack/startup/main.c</path>
+        </group>
+        <group name="Application/ui" build="true">
+            <path reference="$PROJ_DIR$/Application/ui/cui.c">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/common/cui/cui.c</path>
+            <path reference="$PROJ_DIR$/Application/ui/cui.h">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/common/cui/cui.h</path>
+        </group>
+        <group name="Application/util" build="true">
+            <path reference="$PROJ_DIR$/Application/util/mac_util.c">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/ti154stack/common/util/mac_util.c</path>
+            <path reference="$PROJ_DIR$/Application/util/mac_util.h">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/ti154stack/common/util/mac_util.h</path>
+            <path reference="$PROJ_DIR$/Application/util/util_timer.c">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/ti154stack/common/util/util_timer.c</path>
+            <path reference="$PROJ_DIR$/Application/util/util_timer.h">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/ti154stack/common/util/util_timer.h</path>
+        </group>
+        <group name="Common/gpd" build="true">
+            <path reference="$PROJ_DIR$/Common/gpd/gpd.c">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/zstack/gpd/gpd.c</path>
+            <path reference="$PROJ_DIR$/Common/gpd/gpd.h">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/zstack/gpd/gpd.h</path>
+            <path reference="$PROJ_DIR$/Common/gpd/gpd_common.h">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/zstack/gpd/gpd_common.h</path>
+            <path reference="$PROJ_DIR$/Common/gpd/gpd_config.h">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/zstack/gpd/gpd_config.h</path>
+            <path reference="$PROJ_DIR$/Common/gpd/gpd_memory.c">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/zstack/gpd/gpd_memory.c</path>
+            <path reference="$PROJ_DIR$/Common/gpd/gpd_memory.h">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/zstack/gpd/gpd_memory.h</path>
+        </group>
+        <group name="Excluded_From_Build" build="false">
+            <path copyTo="$PROJ_DIR$/Excluded_From_Build/README.html">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/examples/rtos/CC1352P_2_LAUNCHXL/zstack/gpd_switch/README.html</path>
+        </group>
+        <group name="Stack/Config" build="true">
+            <path reference="$PROJ_DIR$/Stack/Config/mac_user_config.c">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/ti154stack/common/boards/mac_user_config.c</path>
+            <path reference="$PROJ_DIR$/Stack/Config/mac_user_config.h">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/ti154stack/common/boards/mac_user_config.h</path>
+        </group>
+        <group name="Stack/HAL/Crypto" build="true">
+            <path reference="$PROJ_DIR$/Stack/HAL/Crypto/crypto_mac_api.h">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/ti154stack/hal/crypto/crypto_mac_api.h</path>
+        </group>
+        <group name="Stack/HAL/Platform" build="true">
+            <path reference="$PROJ_DIR$/Stack/HAL/Platform/hal_defs.h">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/ti154stack/hal/platform/hal_defs.h</path>
+            <path reference="$PROJ_DIR$/Stack/HAL/Platform/hal_mcu.h">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/ti154stack/hal/platform/hal_mcu.h</path>
+            <path reference="$PROJ_DIR$/Stack/HAL/Platform/hal_types.h">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/ti154stack/hal/platform/hal_types.h</path>
+        </group>
+        <group name="Stack/HAL/RF" build="true">
+            <path reference="$PROJ_DIR$/Stack/HAL/RF/rf_mac_api.h">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/ti154stack/hal/rf/rf_mac_api.h</path>
+        </group>
+        <group name="Stack/MAC" build="true">
+            <path reference="$PROJ_DIR$/Stack/MAC/mac_api.h">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/ti154stack/inc/mac_api.h</path>
+        </group>
+        <group name="Stack/MAC/Debug" build="true">
+            <path reference="$PROJ_DIR$/Stack/MAC/Debug/dbg.c">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/ti154stack/tracer/dbg.c</path>
+            <path reference="$PROJ_DIR$/Stack/MAC/Debug/dbg.h">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/ti154stack/tracer/dbg.h</path>
+        </group>
+        <group name="Stack/MAC/HighLevel" build="true">
+            <path reference="$PROJ_DIR$/Stack/MAC/HighLevel/mac_cfg.c">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/ti154stack/high_level/mac_cfg.c</path>
+            <path reference="$PROJ_DIR$/Stack/MAC/HighLevel/mac_high_level.h">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/ti154stack/high_level/mac_high_level.h</path>
+        </group>
+        <group name="Stack/MAC/LowLevel" build="true">
+            <path reference="$PROJ_DIR$/Stack/MAC/LowLevel/mac_activity.h">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/ti154stack/low_level/cc13xx/mac_activity.h</path>
+            <path reference="$PROJ_DIR$/Stack/MAC/LowLevel/mac_assert.h">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/ti154stack/low_level/cc13xx/mac_assert.h</path>
+            <path reference="$PROJ_DIR$/Stack/MAC/LowLevel/mac_rx.h">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/ti154stack/low_level/cc13xx/mac_rx.h</path>
+            <path reference="$PROJ_DIR$/Stack/MAC/LowLevel/mac_settings.c">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/ti154stack/low_level/cc13xx/mac_settings.c</path>
+            <path reference="$PROJ_DIR$/Stack/MAC/LowLevel/mac_settings.h">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/ti154stack/low_level/cc13xx/mac_settings.h</path>
+            <path reference="$PROJ_DIR$/Stack/MAC/LowLevel/mac_tx.h">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/ti154stack/low_level/cc13xx/mac_tx.h</path>
+        </group>
+        <group name="Stack/osal_port" build="true">
+            <path reference="$PROJ_DIR$/Stack/osal_port/osal_port.c">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/ti154stack/common/osal_port/osal_port_posix/osal_port.c</path>
+            <path reference="$PROJ_DIR$/Stack/osal_port/osal_port.h">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/ti154stack/common/osal_port/osal_port.h</path>
+            <path reference="$PROJ_DIR$/Stack/osal_port/osal_port_timers.c">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/ti154stack/common/osal_port/osal_port_posix/osal_port_timers.c</path>
+            <path reference="$PROJ_DIR$/Stack/osal_port/osal_port_timers.h">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/ti154stack/common/osal_port/osal_port_timers.h</path>
+        </group>
+        <group name="Stack/ROM" build="true">
+            <path reference="$PROJ_DIR$/Stack/ROM/fh_map_direct.h">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/ti154stack/rom/fh_map_direct.h</path>
+            <path reference="$PROJ_DIR$/Stack/ROM/fh_rom_init.c">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/ti154stack/rom/fh_rom_init.c</path>
+            <path reference="$PROJ_DIR$/Stack/ROM/fh_rom_jt.h">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/ti154stack/rom/fh_rom_jt.h</path>
+            <path reference="$PROJ_DIR$/Stack/ROM/hmac_map_direct.h">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/ti154stack/rom/hmac_map_direct.h</path>
+            <path reference="$PROJ_DIR$/Stack/ROM/hmac_rom_init.c">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/ti154stack/rom/hmac_rom_init.c</path>
+            <path reference="$PROJ_DIR$/Stack/ROM/hmac_rom_jt.h">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/ti154stack/rom/hmac_rom_jt.h</path>
+            <path reference="$PROJ_DIR$/Stack/ROM/icall_osal_map_direct.h">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/ti154stack/rom/icall_osal_map_direct.h</path>
+            <path reference="$PROJ_DIR$/Stack/ROM/icall_osal_rom_init.c">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/ti154stack/rom/icall_osal_rom_init.c</path>
+            <path reference="$PROJ_DIR$/Stack/ROM/icall_osal_rom_jt.h">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/ti154stack/rom/icall_osal_rom_jt.h</path>
+            <path reference="$PROJ_DIR$/Stack/ROM/lmac_map_direct.h">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/ti154stack/rom/lmac_map_direct.h</path>
+            <path reference="$PROJ_DIR$/Stack/ROM/lmac_rom_init.c">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/ti154stack/rom/lmac_rom_init.c</path>
+            <path reference="$PROJ_DIR$/Stack/ROM/lmac_rom_jt.h">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/ti154stack/rom/lmac_rom_jt.h</path>
+            <path reference="$PROJ_DIR$/Stack/ROM/rom_init_154.c">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/ti154stack/rom/rom_init_154.c</path>
+            <path reference="$PROJ_DIR$/Stack/ROM/rom_jt_154.h">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/ti154stack/rom/rom_jt_154.h</path>
+            <path reference="$PROJ_DIR$/Stack/ROM/rom_jt_def_154.h">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/ti154stack/rom/rom_jt_def_154.h</path>
+        </group>
+        <group name="Stack/sec" build="true">
+            <path reference="$PROJ_DIR$/Stack/sec/eccapi.h">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/zstack/stack/sec/eccapi.h</path>
+            <path reference="$PROJ_DIR$/Stack/sec/ssp.h">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/zstack/stack/sec/ssp.h</path>
+            <path reference="$PROJ_DIR$/Stack/sec/ssp_hash.h">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/zstack/stack/sec/ssp_hash.h</path>
+        </group>
+        <group name="Stack/sys" build="true">
+            <path reference="$PROJ_DIR$/Stack/sys/comdef.h">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/zstack/stack/sys/comdef.h</path>
+            <path reference="$PROJ_DIR$/Stack/sys/zcomdef.h">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/zstack/stack/sys/zcomdef.h</path>
+        </group>
+    </files>
+</iarProjectConnection>
