@@ -1,6 +1,6 @@
 # SimpleLink Zstack Examples
 
-This repository contains the Zstack examples for TI devices supported by the
+This repository contains the Zstack (Zigbee) examples for TI devices supported by the
 SimpleLink Low Power F2 SDK.  To learn which devices are supported by
 the SDK, refer to the [SDK Device Association section](#sdk-association).
 
