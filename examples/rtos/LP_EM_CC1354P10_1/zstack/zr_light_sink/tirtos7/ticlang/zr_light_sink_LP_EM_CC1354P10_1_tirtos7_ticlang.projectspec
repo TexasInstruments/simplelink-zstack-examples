@@ -126,7 +126,6 @@
              @${PROJECT_ROOT}/Stack/Config/f8wrouter.opts
              -I${PROJECT_ROOT}/Common/zcl 
              -DENABLE_GREENPOWER_COMBO_BASIC
-            -DDeviceFamily_CC13X4
             -DHEAPMGR_SIZE=6144
             -DHEAPMGR_CONFIG=0
             -DTIRTOS7_SUPPORT

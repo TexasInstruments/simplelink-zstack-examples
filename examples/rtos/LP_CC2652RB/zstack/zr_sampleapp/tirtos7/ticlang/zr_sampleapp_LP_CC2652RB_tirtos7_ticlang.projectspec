@@ -122,8 +122,6 @@
             -I${COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR}/source/ti/zstack/apps/sampleapp
              @${PROJECT_ROOT}/Stack/Config/f8wrouter.opts
              -I${PROJECT_ROOT}/Common/zcl 
-            -DDEVICE_FAMILY=cc26x0
-            -DDeviceFamily_CC26X2
             -DTIMAC_ROM_IMAGE_BUILD
             -DNVOCMP_NVPAGES=2
             -I${COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR}/source/ti/ti154stack/common/boards
@@ -152,7 +150,7 @@
             --define=NVOCMP_NVPAGES=2
              -l${PROJECT_BUILD_DIR}/syscfg/ti_utils_build_linker.cmd.genlibs
              -i${COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR}/source
-            --library=${COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR}/source/ti/ti154stack/lib/rom/ticlang/timac_rom_PG2_0_rom_api_linker.cmd
+            --library=${COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR}/source/ti/ti154stack/rom/lib/ticlang/timac_rom_PG2_0_rom_api_linker.cmd
             -L${COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR}/kernel/tirtos7/packages
             -Wl,--unused_section_elimination=on
             -Wl,--diag_wrap=off

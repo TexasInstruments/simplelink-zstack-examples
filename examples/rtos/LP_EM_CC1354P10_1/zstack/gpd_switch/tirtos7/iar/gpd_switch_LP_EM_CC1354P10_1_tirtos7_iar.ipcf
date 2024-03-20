@@ -85,9 +85,6 @@
         <define>NV_RESTORE</define>
         <define>NV_INIT</define>
         <define>FEATURE_NON_BEACON_MODE</define>
-        <define>DEVICE_FAMILY=cc13x4</define>
-        <define>DeviceFamily_CC13X4</define>
-        <define>DeviceFamily_CC13X4_CC26X4</define>
         <define>CC13XX</define>
         <define>CC13X4</define>
         <define>NVOCMP_NVPAGES=5</define>
@@ -96,6 +93,7 @@
 
     <extraOptions>
         <args>
+            <arg>-f$PROJ_DIR$/ti_utils_build_compiler.opt</arg>
             <arg>--debug</arg>
             <arg>--silent</arg>
             <arg>-e</arg>

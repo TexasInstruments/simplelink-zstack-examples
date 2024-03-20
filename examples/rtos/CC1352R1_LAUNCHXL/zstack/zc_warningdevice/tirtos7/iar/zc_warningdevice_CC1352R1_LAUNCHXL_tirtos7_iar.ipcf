@@ -112,8 +112,6 @@
         <define>FEATURE_NON_BEACON_MODE</define>
         <define>ZCL_STANDALONE</define>
         <define>MAX_DEVICE_TABLE_ENTRIES=50</define>
-        <define>DEVICE_FAMILY=cc13x0</define>
-        <define>DeviceFamily_CC13X2</define>
         <define>NO_CC1312R1_SUPPORT</define>
         <define>TIMAC_ROM_IMAGE_BUILD</define>
         <define>NVOCMP_NVPAGES=2</define>
@@ -121,6 +119,7 @@
 
     <extraOptions>
         <args>
+            <arg>-f$PROJ_DIR$/ti_utils_build_compiler.opt</arg>
             <arg>--debug</arg>
             <arg>--silent</arg>
             <arg>-e</arg>
@@ -150,7 +149,7 @@
             <arg>--config_def=NVOCMP_NVPAGES=2</arg>
             <arg> -f$PROJ_DIR$/ti_utils_build_linker.cmd.genlibs</arg>
             <arg> -L$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source</arg>
-            <arg>-f$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/ti154stack/lib/rom/iar/timac_rom_PG2_0_rom_api_linker.icf</arg>
+            <arg>-f$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/ti154stack/rom/lib/iar/timac_rom_PG2_0_rom_api_linker.icf</arg>
             <arg>-L$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/kernel/tirtos7/packages</arg>
             <arg>-f$PROJ_DIR$/ti_utils_build_linker.cmd.genlibs</arg>
             <arg> $COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/devices/cc13x2_cc26x2/driverlib/bin/iar/driverlib.lib</arg>
@@ -182,10 +181,6 @@
         </stack>
     </stacks>
 
-
-    <postBuild>
-        <command>ielftool --ihex --verbose "$TARGET_BPATH$.out" "$TARGET_BPATH$.hex" </command>
-    </postBuild>
 
     <files>
         <path reference="$PROJ_DIR$/Board.html">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/boards/CC1352R1_LAUNCHXL/Board.html</path>

@@ -97,7 +97,6 @@
             -I${COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR}/source/ti/ti154stack/common/api/inc
             -I${COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR}/source/ti/common/time
              -I${COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR}/source/ti/zstack/apps/gpd_temperaturesensor
-            -DDeviceFamily_CC13X4
             -DHEAPMGR_SIZE=6144
             -DHEAPMGR_CONFIG=0
             -DTIRTOS7_SUPPORT

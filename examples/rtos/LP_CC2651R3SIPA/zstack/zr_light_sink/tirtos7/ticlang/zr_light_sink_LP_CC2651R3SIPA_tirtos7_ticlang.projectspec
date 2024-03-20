@@ -127,8 +127,6 @@
              @${PROJECT_ROOT}/Stack/Config/f8wrouter.opts
              -I${PROJECT_ROOT}/Common/zcl 
              -DENABLE_GREENPOWER_COMBO_BASIC
-            -DDEVICE_FAMILY=cc26x0
-            -DDeviceFamily_CC26X1
             -DNVOCMP_NVPAGES=2
             -I${COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR}/source/ti/ti154stack/common/boards
             -I${COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR}/source

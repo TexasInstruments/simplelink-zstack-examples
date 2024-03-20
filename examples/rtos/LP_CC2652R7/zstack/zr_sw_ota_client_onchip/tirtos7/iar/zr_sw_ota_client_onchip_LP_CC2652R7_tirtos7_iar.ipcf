@@ -120,8 +120,6 @@
         <define>FEATURE_NON_BEACON_MODE</define>
         <define>ZCL_STANDALONE</define>
         <define>MAX_DEVICE_TABLE_ENTRIES=50</define>
-        <define>DEVICE_FAMILY=cc26x0</define>
-        <define>DeviceFamily_CC26X2X7</define>
         <define>TIMAC_ROM_IMAGE_BUILD</define>
         <define>NVOCMP_NVPAGES=2</define>
         <define>OTA_CLIENT_INTEGRATED</define>
@@ -132,6 +130,7 @@
 
     <extraOptions>
         <args>
+            <arg>-f$PROJ_DIR$/ti_utils_build_compiler.opt</arg>
             <arg> -I$PROJ_DIR$/Application/ota </arg>
             <arg>--debug</arg>
             <arg>--silent</arg>
@@ -164,7 +163,7 @@
             <arg>--config_def=NVOCMP_NVPAGES=2</arg>
             <arg> -f$PROJ_DIR$/ti_utils_build_linker.cmd.genlibs</arg>
             <arg> -L$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source</arg>
-            <arg>-f$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/ti154stack/lib/rom/iar/timac_rom_PG2_0_rom_api_linker.icf</arg>
+            <arg>-f$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/ti154stack/rom/lib/iar/timac_rom_PG2_0_rom_api_linker.icf</arg>
             <arg>-L$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/kernel/tirtos7/packages</arg>
             <arg>-f$PROJ_DIR$/ti_utils_build_linker.cmd.genlibs</arg>
             <arg> $COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/devices/cc13x2x7_cc26x2x7/driverlib/bin/iar/driverlib.lib</arg>
@@ -196,10 +195,6 @@
         </stack>
     </stacks>
 
-
-    <postBuild>
-        <command>"$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/tools/zstack/iar/OTAPostBuild.cmd" "$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/tools/common/oad/" "$PROJ_DIR$" "$TARGET_BPATH$" "$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/tools/zstack/zigbee_ota_image_converter/" "$TARGET_DIR$" "BEBE" "2652" "00000001"</command>
-    </postBuild>
 
     <files>
         <path reference="$PROJ_DIR$/Board.html">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/boards/LP_CC2652R7/Board.html</path>

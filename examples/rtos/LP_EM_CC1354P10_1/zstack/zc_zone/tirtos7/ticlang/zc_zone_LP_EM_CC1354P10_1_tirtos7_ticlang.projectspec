@@ -121,7 +121,6 @@
             -I${COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR}/source/ti/zstack/apps/zone
              @${PROJECT_ROOT}/Stack/Config/f8wcoord.opts
              -I${PROJECT_ROOT}/Common/zcl 
-            -DDeviceFamily_CC13X4
             -DHEAPMGR_SIZE=6144
             -DHEAPMGR_CONFIG=0
             -DTIRTOS7_SUPPORT

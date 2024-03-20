@@ -125,8 +125,6 @@
             -I${COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR}/source/ti/zstack/apps/doorlockcontroller
              @${PROJECT_ROOT}/Stack/Config/f8wcoord.opts
              -I${PROJECT_ROOT}/Common/zcl 
-            -DDEVICE_FAMILY=cc26x0
-            -DDeviceFamily_CC26X1
             -DNVOCMP_NVPAGES=2
             -I${COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR}/source/ti/ti154stack/common/boards
             -I${COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR}/source

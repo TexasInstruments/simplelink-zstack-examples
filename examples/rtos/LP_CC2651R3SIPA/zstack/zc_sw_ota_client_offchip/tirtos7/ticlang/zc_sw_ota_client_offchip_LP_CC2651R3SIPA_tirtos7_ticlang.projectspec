@@ -126,8 +126,6 @@
             -I${COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR}/source/ti/zstack/apps/sw
              @${PROJECT_ROOT}/Stack/Config/f8wcoord.opts
              -I${PROJECT_ROOT}/Common/zcl 
-            -DDEVICE_FAMILY=cc26x0
-            -DDeviceFamily_CC26X1
             -DNVOCMP_NVPAGES=2
             -I${COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR}/source/ti/ti154stack/common/boards
             -I${COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR}/source
@@ -181,11 +179,10 @@
             -llibc.a
         "
         postBuildStep="
-            ${CG_TOOL_ROOT}/bin/tiarmobjcopy ${BuildArtifactFileName} --output-target ihex ${BuildArtifactFileBaseName}.hex;
-            ${CG_TOOL_ROOT}/bin/tiarmobjcopy ${BuildArtifactFileName} --output-target binary  ${BuildArtifactFileBaseName}_oad.bin;
-            ${COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR}/tools/common/oad/oad_image_tool --verbose ccs ${PROJECT_LOC} 7 -hex1 ${ConfigName}/${ProjName}.hex -k ${COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR}/tools/common/oad/private.pem -o ${ConfigName}/${ProjName}_oad;
-            ${COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR}/tools/zstack/zigbee_ota_image_converter/zOTAfileGen ${PROJECT_LOC}/${ConfigName}/${ProjName}_oad.bin ${PROJECT_LOC}/${ConfigName}/ 
-            BEBE 2652 00000001;
+            ${CG_TOOL_ROOT}/bin/tiarmobjcopy ${BuildArtifactFileName} --output-target ihex ${BuildArtifactFileBaseName}.hex;;
+            ${CG_TOOL_ROOT}/bin/tiarmobjcopy ${BuildArtifactFileName} --output-target binary  ${BuildArtifactFileBaseName}_oad.bin;;
+            ${COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR}/tools/common/oad/oad_image_tool --verbose ccs ${PROJECT_LOC} 7 -hex1 ${ConfigName}/${ProjName}.hex -k ${COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR}/tools/common/oad/private.pem -o ${ConfigName}/${ProjName}_oad;;
+            ${COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR}/tools/zstack/zigbee_ota_image_converter/zOTAfileGen ${PROJECT_LOC}/${ConfigName}/${ProjName}_oad.bin ${PROJECT_LOC}/${ConfigName}/ BEBE 2652 00000001;
         "
         enableSysConfigTool="true"
         sysConfigBuildOptions="

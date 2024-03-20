@@ -86,13 +86,12 @@
         <define>NV_RESTORE</define>
         <define>NV_INIT</define>
         <define>FEATURE_NON_BEACON_MODE</define>
-        <define>DEVICE_FAMILY=cc26x0</define>
-        <define>DeviceFamily_CC26X1</define>
         <define>NVOCMP_NVPAGES=2</define>
     </defines>
 
     <extraOptions>
         <args>
+            <arg>-f$PROJ_DIR$/ti_utils_build_compiler.opt</arg>
             <arg>--debug</arg>
             <arg>--silent</arg>
             <arg>-e</arg>
@@ -153,10 +152,6 @@
         </stack>
     </stacks>
 
-
-    <postBuild>
-        <command>ielftool --ihex --verbose "$TARGET_BPATH$.out" "$TARGET_BPATH$.hex" </command>
-    </postBuild>
 
     <files>
         <path reference="$PROJ_DIR$/Board.html">$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/source/ti/boards/LP_CC2651P3/Board.html</path>
