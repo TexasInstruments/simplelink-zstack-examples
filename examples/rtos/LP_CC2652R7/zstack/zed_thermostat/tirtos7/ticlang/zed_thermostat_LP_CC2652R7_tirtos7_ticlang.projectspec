@@ -14,7 +14,7 @@
         name="zed_thermostat_LP_CC2652R7_tirtos7_ticlang"
         configurations="default"
         toolChain="TICLANG"
-        cgtVersion="TICLANG_1.2.1"
+        cgtVersion="3.2.2"
         connection="TIXDS110_Connection.xml"
         device="Cortex M.CC2652R7"
         ignoreDefaultDeviceSettings="true"
@@ -171,7 +171,6 @@
         postBuildStep="
             ${CG_TOOL_ROOT}/bin/tiarmobjcopy ${BuildArtifactFileName} --output-target ihex ${BuildArtifactFileBaseName}.hex;
         "
-        enableSysConfigTool="true"
         sysConfigBuildOptions="
             --product ${COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR}/.metadata/product.json
             --compiler ticlang
@@ -360,7 +359,11 @@
         </file>
         <file path="${COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR}/source/ti/zstack/osal/osal_nv.h" openOnCreation="false" excludeFromBuild="false" action="link" targetDirectory="Stack/osal_port">
         </file>
+        <file path="${COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR}/source/ti/ti154stack/common/osal_port/osal_port_posix/api_mac.c" openOnCreation="false" excludeFromBuild="false" action="link" targetDirectory="Stack/osal_port">
+        </file>
         <file path="${COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR}/source/ti/ti154stack/common/osal_port/osal_port_posix/osal_port.c" openOnCreation="false" excludeFromBuild="false" action="link" targetDirectory="Stack/osal_port">
+        </file>
+        <file path="${COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR}/source/ti/ti154stack/common/osal_port/api_mac.h" openOnCreation="false" excludeFromBuild="false" action="link" targetDirectory="Stack/osal_port">
         </file>
         <file path="${COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR}/source/ti/ti154stack/common/osal_port/osal_port.h" openOnCreation="false" excludeFromBuild="false" action="link" targetDirectory="Stack/osal_port">
         </file>

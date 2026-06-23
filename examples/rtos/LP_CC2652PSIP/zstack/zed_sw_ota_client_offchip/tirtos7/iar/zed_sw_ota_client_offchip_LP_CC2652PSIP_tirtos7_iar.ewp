@@ -637,7 +637,7 @@
             <data>
                 <buildActions>
                         <buildAction>
-                            <cmdline>"$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/tools/zstack/iar/OTAPostBuild.cmd" "$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/tools/common/oad/" "$PROJ_DIR$" "$TARGET_BPATH$" "$COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/tools/zstack/zigbee_ota_image_converter/" "$TARGET_DIR$" "BEBE" "2652" "00000001"</cmdline>
+                            <cmdline>"$SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/tools/zstack/iar/OTAPostBuild.cmd" "$SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/tools/common/oad/" "$PROJ_DIR$" "$TARGET_BPATH$" "$SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR$/tools/zstack/zigbee_ota_image_converter/" "$TARGET_DIR$" "BEBE" "2652" "00000001"</cmdline>
                             <workingDirectory>$PROJ_DIR$/$CONFIG_NAME$</workingDirectory>
                             <buildSequence>postLink</buildSequence>
                         </buildAction>

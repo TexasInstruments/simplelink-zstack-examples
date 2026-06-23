@@ -1,4 +1,4 @@
-### simplelink_cc13xx_cc26xx_sdk  Based zstack Boards
+### Supported boards for zstack examples in simplelink_cc13xx_cc26xx_sdk
 * CC1352P_2_LAUNCHXL
 * CC1352P_4_LAUNCHXL
 * CC1352R1_LAUNCHXL
@@ -12,3 +12,4 @@
 * LP_CC2652RSIP
 * LP_EM_CC1354P10_1
 * LP_EM_CC1354P10_6
+* LP_EM_CC2674P10

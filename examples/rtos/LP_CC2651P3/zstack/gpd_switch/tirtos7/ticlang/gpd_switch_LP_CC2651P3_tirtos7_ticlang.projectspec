@@ -14,7 +14,7 @@
         name="gpd_switch_LP_CC2651P3_tirtos7_ticlang"
         configurations="default"
         toolChain="TICLANG"
-        cgtVersion="TICLANG_1.2.1"
+        cgtVersion="3.2.2"
         connection="TIXDS110_Connection.xml"
         device="Cortex M.CC2651P3"
         ignoreDefaultDeviceSettings="true"
@@ -143,7 +143,6 @@
         postBuildStep="
             ${CG_TOOL_ROOT}/bin/tiarmobjcopy ${BuildArtifactFileName} --output-target ihex ${BuildArtifactFileBaseName}.hex;
         "
-        enableSysConfigTool="true"
         sysConfigBuildOptions="
             --product ${COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR}/.metadata/product.json
             --compiler ticlang

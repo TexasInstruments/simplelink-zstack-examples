@@ -14,6 +14,7 @@
         name="gpd_switch_LP_EM_CC1354P10_1_tirtos7_ticlang"
         configurations="default"
         toolChain="TICLANG"
+        cgtVersion="3.2.2"
         connection="TIXDS110_Connection.xml"
         device="Cortex M.CC2674R10"
         ignoreDefaultDeviceSettings="true"
@@ -130,7 +131,6 @@
             -L${CG_TOOL_ROOT}/lib
             -llibc.a
         "
-        enableSysConfigTool="true"
         sysConfigBuildOptions="
             --product ${COM_TI_SIMPLELINK_CC13XX_CC26XX_SDK_INSTALL_DIR}/.metadata/product.json
             --compiler ticlang
